@@ -9,6 +9,7 @@
   "author": "Ivan Bojer",
   "license": "ISC",
   "dependencies": {
+    "asciify": "^1.3.5",
     "body-parser": "^1.x.x",
     "express": "^4.x.x",
     "figlet": "^1.1.1"
