@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
   var userName = req.body.user_name;
-  var channelID = req.body.channel_id;
+  var channelID = req.body.channel_name;
 
   var botPayload = {
     text : 'Hello, ' + userName + '! It is great to see you hanging with me at ' + channelID
