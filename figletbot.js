@@ -1,12 +1,12 @@
 var figlet = require('figlet');
 
 module.exports = function (req, res, next) {
-  var text = req.body.user_name;
+  var text = req.body.text;
   var botPayload = {
     text : '!'
   };
 
-  figlet('Ivan', function(err, data) {
+  figlet(text, function(err, data) {
     if (err) {
         txt = err;
         console.log('Something went wrong...');
