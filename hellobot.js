@@ -3,7 +3,7 @@ module.exports = function (req, res, next) {
   var channelID = req.body.channel_id;
 
   var botPayload = {
-    text : 'Hello, ' + userName + '! It is great to see you hanging with me at ' + channelID;
+    text : 'Hello, ' + userName + '! It is great to see you hanging with me at ' + channelID
   };
 
   // avoid infinite loop
