@@ -18,7 +18,8 @@ module.exports = function (req, res, next) {
       try {
         botPayload.text = obj.contents.quotes[0].quote;
       } catch (err) {
-        botPayload.text = chunk;
+        console.log('chunk.error.code ' + obj.error.message);
+        botPayload.text = obj.error.message;
       }
       return res.status(200).json(botPayload);
     });
