@@ -15,7 +15,11 @@ module.exports = function (req, res, next) {
     resp.setEncoding('utf8');
     resp.on('data', function(chunk){
       obj = JSON.parse(chunk);
-      botPayload.text = obj.contents.quotes[0].quote;
+      try {
+        botPayload.text = obj.contents.quotes[0].quote;
+      } catch (err) {
+        botPayload.text = chunk;
+      }
       return res.status(200).json(botPayload);
     });
   }).on("error", function(e){
