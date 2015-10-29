@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var hellobot = require('./hellobot');
 var dicebot = require('./dicebot');
 var figletbot = require('./figletbot');
+var asciibot = require('./asciibot');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -28,3 +29,5 @@ app.post('/hello', hellobot);
 app.post('/dice', dicebot);
 
 app.post('/figlet', figletbot);
+
+app.post('/ascii', asciibot);
