@@ -8,8 +8,9 @@
   },
   "author": "Ivan Bojer",
   "license": "ISC",
-  "dependencies" :
-  	{ 	"express": "^4.x.x",
-  		"body-parser": "^1.x.x"
-  	}
+  "dependencies": {
+    "body-parser": "^1.x.x",
+    "express": "^4.x.x",
+    "figlet": "^1.1.1"
+  }
 }
